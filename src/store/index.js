@@ -14,5 +14,9 @@ export const configureStore = () => createStore(
 
 export {
     playersReceived,
-    playerReceived
+    playerReceived    
 } from './actions';
+
+export {
+  getPlayerBykey
+} from './reducer';

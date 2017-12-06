@@ -6,7 +6,7 @@ import Drawer from './components/Drawer';
 import Footer from './components/Footer';
 import Ranking from './pages/Ranking.Container';
 import Rounds from './pages/Rounds';
-import Player from './pages/Player';
+import Player from './pages/Player/';
 
 class App extends Component {
   render() {
@@ -20,7 +20,7 @@ class App extends Component {
           <Switch>
             <Route path='/ranking' component={Ranking} />
             <Route path='/rounds' component={Rounds} />
-            <Route path='/player' component={Player} />
+            <Route path='/player/:key' component={Player} />
             <Redirect to='/ranking' />
           </Switch>
         </main>
