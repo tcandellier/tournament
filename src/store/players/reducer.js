@@ -14,7 +14,7 @@ const initialState = [
         name: "Celestine"
     },
     {
-        name: "Loupiotte"
+        name: "Christine"
     }
 ];
 

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import NavBar from './components/navbar';
-import Drawer from './components/drawer';
-import Footer from './components/footer';
-import Ranking from './pages/ranking';
-import Rounds from './pages/rounds';
+import NavBar from './components/Navbar';
+import Drawer from './components/Drawer';
+import Footer from './components/Footer';
+import Ranking from './pages/Ranking.Container';
+import Rounds from './pages/Rounds';
+import Player from './pages/Player';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Switch>
             <Route path='/ranking' component={Ranking} />
             <Route path='/rounds' component={Rounds} />
+            <Route path='/player' component={Player} />
             <Redirect to='/ranking' />
           </Switch>
         </main>
