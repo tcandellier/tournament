@@ -5,4 +5,4 @@ export default combineReducers({
     players: playersReducer
 });
 
-export const getPlayerBykey = (state, key) => players.getPlayerBykey(state, key);
+export const getPlayerBykey = (state, idPlayer) => players.getPlayerBykey(state, idPlayer);

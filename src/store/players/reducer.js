@@ -2,23 +2,23 @@ import { PLAYERS_RECEIVED, PLAYER_RECEIVED, playerReceived } from './actions';
 
 const initialState = [
     {
-        key: "thomas",
+        idPlayer: "thomas",
         name: "Thomas"
     },
     {
-        key: "victor",
+        idPlayer: "victor",
         name: "Victor"
     },
     {
-        key: "anny",
+        idPlayer: "anny",
         name: "Anny"
     },
     {
-        key: "celestine",
+        idPlayer: "celestine",
         name: "Celestine"
     },
     {
-        key: "christine",
+        idPlayer: "christine",
         name: "Christine"
     }
 ];
@@ -36,4 +36,4 @@ const reducer = (state = initialState, action) => {
 export default reducer;
 
 // selectors
-export const getPlayerBykey = (state, key) => state.players.find(player => player.key === key);
+export const getPlayerBykey = (state, idPlayer) => state.players.find(player => player.idPlayer === idPlayer);

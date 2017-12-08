@@ -20,7 +20,7 @@ class App extends Component {
           <Switch>
             <Route path='/ranking' component={Ranking} />
             <Route path='/rounds' component={Rounds} />
-            <Route path='/player/:key' component={Player} />
+            <Route path='/player/:idPlayer' component={Player} />
             <Redirect to='/ranking' />
           </Switch>
         </main>

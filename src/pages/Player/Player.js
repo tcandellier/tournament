@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PlayerCard from '../../components/PlayerCard/';
 
 class Player extends Component {
     constructor(props) {
@@ -7,13 +8,13 @@ class Player extends Component {
     }
 
     render() {
-        const { playerExists, key } = this.props;
+        const { playerExists, idPlayer } = this.props;
         return (
-            <div class="page-content">
+            <div className="page-content">
                 <h2>Fiche Joueur</h2>
                 {
                     playerExists ?
-                        "Joueur existant" :
+                        <PlayerCard idPlayer={idPlayer} />:
                         "Nouveau joueur"
                 }
             </div>

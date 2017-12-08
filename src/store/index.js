@@ -13,8 +13,8 @@ export const configureStore = () => createStore(
 );
 
 export {
-    playersReceived,
-    playerReceived    
+  playersReceived,
+  playerReceived
 } from './actions';
 
 export {
