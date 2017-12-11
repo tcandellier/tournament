@@ -14,7 +14,7 @@ class Player extends Component {
                 <h2>Fiche Joueur</h2>
                 {
                     playerExists ?
-                        <PlayerCard idPlayer={idPlayer} />:
+                        "Joueur existant" :
                         "Nouveau joueur"
                 }
             </div>
