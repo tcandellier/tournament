@@ -14,6 +14,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "formsy-react": "^1.1.2",
     "material-design-lite": "^1.3.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",

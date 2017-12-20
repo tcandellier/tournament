@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PlayerCard from '../../components/PlayerCard/';
+import PlayerForm from '../../components/PlayerForm/';
 
 class Player extends Component {
     constructor(props) {
@@ -11,11 +12,16 @@ class Player extends Component {
         const { playerExists, idPlayer } = this.props;
         return (
             <div className="page-content">
-                <h2>Fiche Joueur</h2>
                 {
                     playerExists ?
-                        "Joueur existant" :
-                        "Nouveau joueur"
+                        <Fragment>
+                            <h2>Fiche Joueur</h2>
+                            <PlayerCard idPlayer={idPlayer} />
+                        </Fragment > :
+                        <Fragment>
+                            <h2>Nouveau Joueur</h2>
+                            <PlayerForm idPlayer={idPlayer} />
+                        </Fragment>
                 }
             </div>
         );

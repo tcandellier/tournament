@@ -21,7 +21,7 @@ const Ranking = ({ players }) => (
             <tbody>
                 {players
                     .map(player =>
-                        <PlayerRow player={player} idPlayer={player.idPlayer} />
+                        <PlayerRow player={player} key={player.idPlayer} />
                     )
                 }
             </tbody>

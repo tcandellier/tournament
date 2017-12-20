@@ -1,8 +1,10 @@
 import { connect } from 'react-redux';
 import PlayerForm from './PlayerForm';
+import { getPlayerBykey } from '../../store';
 
-const mapStateToProps = (state, { id }) => ({
-    player: { name: 'fakePlayer' }
+
+const mapStateToProps = (state, {idPlayer}) => ({
+    player: idPlayer ? getPlayerBykey(idPlayer) : null  
 });
 
 const mapDispatchToProps = (dispatch, {id}) => ({
