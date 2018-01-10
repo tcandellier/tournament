@@ -55,4 +55,3 @@ const adaptForFormsyProps = (input) => {
 };
 
 export default withFormsy(adaptForFormsyProps(Input));
-//export default Input;
